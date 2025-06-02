@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Item | Royal Mail Group Ltd</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header-section">
+        <!-- Top Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/rmg_logo.svg" alt="Royal Mail Group" height="40">
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Main Navigation -->
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Personal Dropdown -->
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="personalDropdown" role="button" data-bs-toggle="dropdown">
+                                Personal
+                            </a>
+                            <div class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="dropdown-header">Sending</h6>
+                                            <a class="dropdown-item" href="#">UK delivery prices</a>
+                                            <a class="dropdown-item" href="#">International delivery prices</a>
+                                            <a class="dropdown-item" href="#">Return to retailers</a>
+                                            <a class="dropdown-item" href="#">Same day delivery</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="dropdown-header">Receiving</h6>
+                                            <a class="dropdown-item" href="#">Tracking</a>
+                                            <a class="dropdown-item" href="#">Redelivery</a>
+                                            <a class="dropdown-item" href="#">Paying fees</a>
+                                            <a class="dropdown-item" href="#">Redirection</a>
+                                            <a class="dropdown-item" href="#">Holding mail with KeepSafe</a>
+                                            <a class="dropdown-item" href="#">PO Box</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="promo-card">
+                                                <img src="assets/images/promos/nav_personal_promo_health.jpg" alt="Royal Mail Health" class="img-fluid">
+                                                <h6>Royal Mail Health</h6>
+                                                <p>Delivering care to your doorstep</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="quick-links">
+                                                <h6 class="dropdown-header">Quick Links</h6>
+                                                <a href="#" class="quick-link-item">
+                                                    <i class="fas fa-paper-plane"></i> Send an item
+                                                </a>
+                                                <a href="#" class="quick-link-item">
+                                                    <i class="fas fa-search-location"></i> Find a postcode
+                                                </a>
+                                                <a href="#" class="quick-link-item">
+                                                    <i class="fas fa-calendar-alt"></i> Book a collection
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Business Dropdown -->
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="businessDropdown" role="button" data-bs-toggle="dropdown">
+                                Business
+                            </a>
+                            <div class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="dropdown-header">Shipping</h6>
+                                            <a class="dropdown-item" href="#">Parcel deliveries</a>
+                                            <a class="dropdown-item" href="#">Mail delivery</a>
+                                            <a class="dropdown-item" href="#">UK business delivery prices</a>
+                                            <a class="dropdown-item" href="#">International business shipping</a>
+                                            <a class="dropdown-item" href="#">Same day delivery</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="dropdown-header">Receiving</h6>
+                                            <a class="dropdown-item" href="#">Track</a>
+                                            <a class="dropdown-item" href="#">Redeliver</a>
+                                            <a class="dropdown-item" href="#">Returns</a>
+                                            <a class="dropdown-item" href="#">Hold my mail</a>
+                                            <a class="dropdown-item" href="#">Business PO Boxes</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="promo-card">
+                                                <img src="assets/images/promos/nav_business_promos_sme.jpg" alt="Small business hub" class="img-fluid">
+                                                <h6>Small business hub</h6>
+                                                <p>Helping you achieve your goals</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="quick-links">
+                                                <h6 class="dropdown-header">Quick Links</h6>
+                                                <a href="#" class="quick-link-item">
+                                                    <i class="fas fa-paper-plane"></i> Send an item
+                                                </a>
+                                                <a href="#" class="quick-link-item">
+                                                    <i class="fas fa-search-location"></i> Find a postcode
+                                                </a>
+                                                <a href="#" class="quick-link-item">
+                                                    <i class="fas fa-truck"></i> Track a delivery
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Stamps & supplies -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="stampsDropdown" role="button" data-bs-toggle="dropdown">
+                                Stamps & supplies
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">1st and 2nd Class Stamps</a></li>
+                                <li><a class="dropdown-item" href="#">International Postage</a></li>
+                                <li><a class="dropdown-item" href="#">Special stamp issues</a></li>
+                                <li><a class="dropdown-item" href="#">Subscriptions and gifts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Right side navigation -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary ms-2" href="#">Send an item</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Search Bar (Mobile) -->
+        <div class="search-section d-lg-none">
+            <div class="container">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumb -->
+        <section class="breadcrumb-section py-3 bg-light">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Track Your Item</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Tracking Hero Section -->
+        <section class="tracking-hero-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="tracking-hero-content text-center">
+                            <h1 class="display-4 fw-bold mb-4">Track Your Item</h1>
+                            <p class="lead mb-5">Enter your tracking number to see the latest updates on your delivery</p>
+                            
+                            <!-- Tracking Form -->
+                            <div class="tracking-form-card">
+                                <form id="trackingForm" class="tracking-form">
+                                    <div class="input-group input-group-lg mb-4">
+                                        <input type="text" class="form-control" id="trackingInput" 
+                                               placeholder="Enter your tracking number" 
+                                               aria-label="Tracking number"
+                                               pattern="[A-Za-z0-9]{10,20}"
+                                               required>
+                                        <button class="btn btn-primary" type="submit">
+                                            <i class="fas fa-search me-2"></i>Track
+                                        </button>
+                                    </div>
+                                    <div class="tracking-examples">
+                                        <small class="text-muted">
+                                            Examples: RR123456789GB, CP123456789GB, EE123456789GB
+                                        </small>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Print Button -->
+        <button class="print-button" onclick="window.print()">
+            <i class="fas fa-print me-2"></i>Print Tracking Info
+        </button>
+
+        <!-- Tracking Results Section -->
+        <section class="tracking-results-section py-5" id="trackingResults">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Tracking Summary Card -->
+                        <div class="tracking-summary-card mb-4">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8">
+                                            <h3 class="card-title mb-2">Tracking Number: RR123456789GB</h3>
+                                            <p class="card-text mb-2">
+                                                <strong>Status: </strong>
+                                                <span class="badge bg-success">Delivered</span>
+                                            </p>
+                                            <p class="card-text mb-2">
+                                                <strong>Estimated Delivery: </strong>
+                                                <span>Delivered on 15 Jan 2025 at 2:30 PM</span>
+                                            </p>
+                                            <p class="card-text mb-0">
+                                                <strong>Service Type: </strong>
+                                                <span>Special Delivery Guaranteed</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 text-md-end">
+                                            <div class="tracking-icon">
+                                                <i class="fas fa-truck fa-3x text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detailed Information Cards -->
+                        <div class="row g-4 mb-4">
+                            <!-- Sender Information -->
+                            <div class="col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="fas fa-user-tie me-2 text-primary"></i>Sender Information</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="sender-info">
+                                            <div class="info-row">
+                                                <span class="info-label">Company Name:</span>
+                                                <span class="info-value">Amazon UK Services Ltd</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Contact Person:</span>
+                                                <span class="info-value">Customer Service Team</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Address:</span>
+                                                <span class="info-value">
+                                                    Amazon Fulfillment Centre<br>
+                                                    1 Principal Place<br>
+                                                    London, EC2A 2FA
+                                                </span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Phone:</span>
+                                                <span class="info-value">0800 279 7234</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Email:</span>
+                                                <span class="info-value">customer-service@amazon.co.uk</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Reference:</span>
+                                                <span class="info-value">AMZ-2025-001234</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Receiver Information -->
+                            <div class="col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="fas fa-user me-2 text-success"></i>Receiver Information</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="receiver-info">
+                                            <div class="info-row">
+                                                <span class="info-label">Full Name:</span>
+                                                <span class="info-value">John Smith</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Title:</span>
+                                                <span class="info-value">Mr.</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Delivery Address:</span>
+                                                <span class="info-value">
+                                                    123 Main Street<br>
+                                                    Apartment 4B<br>
+                                                    London, SW1A 1AA
+                                                </span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Phone:</span>
+                                                <span class="info-value">+44 7700 900123</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Email:</span>
+                                                <span class="info-value">john.smith@email.com</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="info-label">Special Instructions:</span>
+                                                <span class="info-value">Leave with neighbour if not available</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Parcel Information -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="fas fa-box me-2 text-warning"></i>Parcel Information</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="parcel-details">
+                                                    <div class="info-row">
+                                                        <span class="info-label">Package Type:</span>
+                                                        <span class="info-value">Medium Parcel</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Weight:</span>
+                                                        <span class="info-value">1.2 kg</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Dimensions:</span>
+                                                        <span class="info-value">30cm x 20cm x 10cm</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Service Type:</span>
+                                                        <span class="info-value">Special Delivery Guaranteed</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Postage Paid:</span>
+                                                        <span class="info-value">£8.95</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="parcel-details">
+                                                    <div class="info-row">
+                                                        <span class="info-label">Contents:</span>
+                                                        <span class="info-value">Electronics - Mobile Phone Case</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Value:</span>
+                                                        <span class="info-value">£25.99</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Insurance:</span>
+                                                        <span class="info-value">£500.00</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Signature Required:</span>
+                                                        <span class="info-value">
+                                                            <span class="badge bg-success">Yes</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Age Verification:</span>
+                                                        <span class="info-value">
+                                                            <span class="badge bg-secondary">Not Required</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location Information -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="fas fa-map-marker-alt me-2 text-danger"></i>Location Information</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="location-info">
+                                                    <div class="info-row">
+                                                        <span class="info-label">Current Location:</span>
+                                                        <span class="info-value">Delivered</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Facility:</span>
+                                                        <span class="info-value">London Central DO</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Address:</span>
+                                                        <span class="info-value">
+                                                            45 Delivery Road<br>
+                                                            London, SW1A 2BB
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="location-info">
+                                                    <div class="info-row">
+                                                        <span class="info-label">Distance:</span>
+                                                        <span class="info-value">0 miles - Delivered</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Postcode Area:</span>
+                                                        <span class="info-value">SW1A</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Delivery Round:</span>
+                                                        <span class="info-value">Round 15B</span>
+                                                    </div>
+                                                    <div class="info-row">
+                                                        <span class="info-label">Last Updated:</span>
+                                                        <span class="info-value">15 Jan 2025, 2:30 PM</span>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <button class="btn btn-outline-primary btn-sm w-100">
+                                                            <i class="fas fa-map me-2"></i>View on Map
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Tracking Timeline -->
+                        <div class="tracking-timeline-card mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="mb-0"><i class="fas fa-history me-2"></i>Tracking History</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tracking-timeline">
+                                        <!-- Timeline Item 1 - Delivered -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker">
+                                                <i class="fas fa-check-circle text-success"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-header">
+                                                    <h6 class="timeline-title mb-1">Delivered</h6>
+                                                    <small class="text-muted">15 Jan 2025 at 2:30 PM</small>
+                                                </div>
+                                                <p class="timeline-description mb-1">Item delivered to recipient</p>
+                                                <small class="text-muted">
+                                                    <i class="fas fa-map-marker-alt me-1"></i>Your address
+                                                </small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Timeline Item 2 - Out for delivery -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker">
+                                                <i class="fas fa-truck text-primary"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-header">
+                                                    <h6 class="timeline-title mb-1">Out for delivery</h6>
+                                                    <small class="text-muted">15 Jan 2025 at 8:45 AM</small>
+                                                </div>
+                                                <p class="timeline-description mb-1">Item out for delivery</p>
+                                                <small class="text-muted">
+                                                    <i class="fas fa-map-marker-alt me-1"></i>Local delivery office
+                                                </small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Timeline Item 3 - In transit -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker">
+                                                <i class="fas fa-shipping-fast text-info"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-header">
+                                                    <h6 class="timeline-title mb-1">In transit</h6>
+                                                    <small class="text-muted">14 Jan 2025 at 6:20 PM</small>
+                                                </div>
+                                                <p class="timeline-description mb-1">Item in transit</p>
+                                                <small class="text-muted">
+                                                    <i class="fas fa-map-marker-alt me-1"></i>Regional sorting facility
+                                                </small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Timeline Item 4 - Processed -->
+                                        <div class="timeline-item timeline-item-last">
+                                            <div class="timeline-marker">
+                                                <i class="fas fa-cog text-secondary"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-header">
+                                                    <h6 class="timeline-title mb-1">Processed</h6>
+                                                    <small class="text-muted">13 Jan 2025 at 11:15 AM</small>
+                                                </div>
+                                                <p class="timeline-description mb-1">Item processed at facility</p>
+                                                <small class="text-muted">
+                                                    <i class="fas fa-map-marker-alt me-1"></i>Mail centre
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Map & Location -->
+                        
+
+                        <!-- Contact & Support -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="fas fa-headset me-2"></i>Need Help?</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="support-options">
+                                            <div class="support-item mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-phone text-primary me-3"></i>
+                                                    <div>
+                                                        <strong>Call Customer Service</strong>
+                                                        <p class="mb-0 text-muted small">03457 740 740</p>
+                                                        <small class="text-muted">Mon-Fri 8am-6pm, Sat 8am-4pm</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="support-item mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-comments text-primary me-3"></i>
+                                                    <div>
+                                                        <strong>Live Chat</strong>
+                                                        <p class="mb-0 text-muted small">Chat with our support team</p>
+                                                        <small class="text-muted">Available 24/7</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="support-item">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-envelope text-primary me-3"></i>
+                                                    <div>
+                                                        <strong>Email Support</strong>
+                                                        <p class="mb-0 text-muted small">customer.services@royalmail.com</p>
+                                                        <small class="text-muted">Response within 24 hours</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0"><i class="fas fa-share-alt me-2"></i>Share Tracking</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="share-options">
+                                            <p class="text-muted mb-3">Share this tracking information with others</p>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="trackingUrl" readonly
+                                                       value="https://royalmail.com/track?ref=RR123456789GB">
+                                                <button class="btn btn-outline-secondary" type="button" onclick="copyTrackingUrl()">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <div class="social-share">
+                                                <button class="btn btn-outline-primary btn-sm me-2">
+                                                    <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                                                </button>
+                                                <button class="btn btn-outline-info btn-sm me-2">
+                                                    <i class="fas fa-envelope me-1"></i>Email
+                                                </button>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                    <i class="fas fa-sms me-1"></i>SMS
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Related Services -->
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions Section -->
+        <section class="quick-actions-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Need Help?</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="quick-action-card text-center">
+                            <div class="quick-action-icon mb-3">
+                                <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+                            </div>
+                            <h5>Redeliver</h5>
+                            <p>Arrange a new delivery time</p>
+                            <a href="#" class="btn btn-outline-primary">Book Redelivery</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="quick-action-card text-center">
+                            <div class="quick-action-icon mb-3">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                            </div>
+                            <h5>Collect</h5>
+                            <p>Pick up from a local depot</p>
+                            <a href="#" class="btn btn-outline-primary">Find Location</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="quick-action-card text-center">
+                            <div class="quick-action-icon mb-3">
+                                <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                            </div>
+                            <h5>Safe Place</h5>
+                            <p>Set delivery preferences</p>
+                            <a href="#" class="btn btn-outline-primary">Manage</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="quick-action-card text-center">
+                            <div class="quick-action-icon mb-3">
+                                <i class="fas fa-question-circle fa-2x text-primary"></i>
+                            </div>
+                            <h5>Help</h5>
+                            <p>Get support and answers</p>
+                            <a href="#" class="btn btn-outline-primary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Track Multiple Items -->
+        <section class="track-multiple-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">Track Multiple Items</h2>
+                        <p class="lead mb-4">Need to track several packages? Create an account to manage all your deliveries in one place.</p>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <a href="#" class="btn btn-primary btn-lg">Create Account</a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Tools -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Tools</h5>
+                    <ul class="footer-links">
+                        <li><a href="track.html">Track your item</a></li>
+                        <li><a href="#">Postcode finder</a></li>
+                        <li><a href="#">Price finder</a></li>
+                        <li><a href="#">Online postage</a></li>
+                        <li><a href="#">Book a Redelivery</a></li>
+                        <li><a href="#">Get the Royal Mail App</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help and info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Help and info</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help and support</a></li>
+                        <li><a href="#">Collect a missed delivery</a></li>
+                        <li><a href="#">I think my mail is lost</a></li>
+                        <li><a href="#">Service updates</a></li>
+                        <li><a href="#">How to make a claim</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Dog Awareness</a></li>
+                        <li><a href="#">The future of letter deliveries</a></li>
+                        <li><a href="#">Scam guidance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mail -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Mail</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">UK services</a></li>
+                        <li><a href="#">International services</a></li>
+                        <li><a href="#">The Stamp Hub</a></li>
+                        <li><a href="#">Our prices</a></li>
+                        <li><a href="#">Redirect your mail</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our partners -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Our partners</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Parcelforce Worldwide</a></li>
+                        <li><a href="#">Stamp retailers</a></li>
+                        <li><a href="#">British Heart Foundation</a></li>
+                        <li><a href="#">Keep Me Posted</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="social-links text-center">
+                        <h5>Royal Mail social links</h5>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-md-6">
+                    <div class="safe-space">
+                        <img src="assets/images/footer/SafeSpace-logo.png" alt="Together we will end domestic abuse" height="30">
+                        <p class="mt-2">Together we can end domestic abuse</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">International Distribution Services</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Cymraeg</a></li>
+                    </ul>
+                    <p class="copyright mt-3">© Royal Mail Group Limited 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
